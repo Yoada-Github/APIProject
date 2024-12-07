@@ -3,13 +3,12 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
+  resolve: {
+    alias: {},
+  },
   build: {
     rollupOptions: {
-      external: ['axios', 'bootstrap'], 
-    },
-  },
-  resolve: {
-    alias: {
+      external: [], 
     },
   },
 });
